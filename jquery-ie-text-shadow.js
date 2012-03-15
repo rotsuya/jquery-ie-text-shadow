@@ -15,52 +15,86 @@
  */
 (function($) {
     $.fn.textShadow = function(option) {
-//		if (!$.browser.msie) return;
-        var IE6 = $.browser.version < 7;
+/*debug
+        if (!$.browser.msie) {
+            return;
+        }
+*/
+        var isIE6 = $.browser.version < 7;
         return this.each(function() {
-            var $el = $(this);
-            $el.textShadowRemove();
+            var $element = $(this);
+            $element.textShadowRemove();
             var style = this.currentStyle || document.defaultView.getComputedStyle(this, '');
-            var shadows = $el.textShadowParse(style['text-shadow']);
-            var html = $el.html();
+            var shadows = $element.textShadowParse(style['text-shadow']);
+            var html = $element.html();
             for (var i = 0, il = shadows.length; i < il; i++) {
                 var shadow = $.extend(shadows[i], option);
-                if ($el.css("position")=="static") {
-                    $el.css({position:"relative"});
+                if ($element.css('position') === 'static') {
+                    $element.css({position: 'relative'});
                 }
-                $el.css({zIndex:"0"});
-                if (IE6) {
-                    $el.css({zoom:"1"});
+                $element.css({zIndex: '0'});
+                if (isIE6) {
+                    $element.css({zoom: '1'});
                 }
-                var $div=$('<div>');
-                $div.addClass("jQueryTextShadow");
-                $div.html(html);
-                $div.css({
-                    margin:     '0',
-                    padding:    style["padding"],
-                    width:		$el.width(),
-                    position:	"absolute",
-                    zIndex:		"-1",
-                    color:		shadow.color != null ? shadow.color : $el.css("color"),
-                    left:		(-parseInt(shadow.radius)+parseInt(shadow.x))+"px",
-                    top:		(-parseInt(shadow.radius)+parseInt(shadow.y))+"px",
-                    'line-height':  style['line-height'],
-                    'font-weight':  style['font-weight'],
-                    'text-align':  style['text-align']
+                var $div = $('<div></div>')
+                    .addClass('jQueryTextShadow')
+                    .css({
+                        position:   	    'absolute',
+                        left:	    	    (parseInt(shadow.x) - parseInt(shadow.radius)) + 'px',
+                        top:		        (parseInt(shadow.y) - parseInt(shadow.radius)) + 'px',
+                        margin:             '0',
+                        'padding-top':      style['padding-top'],
+                        'padding-right':    style['padding-right'],
+                        'padding-bottom':   style['padding-bottom'],
+                        'padding-left':     style['padding-left'],
+                        width:	    	    $element.width(),
+                        zIndex:	    	    '-1'
                 });
+                $span = $('<span></span>')
+                    .css({
+                        color:	    	shadow.color || $element.css('color'),
+                        'line-height':  style['line-height'],
+                        'font-weight':  style['font-weight'],
+                        'text-align':   style['text-align']
+                    })
+                    .html(html)
+                    .appendTo($div);
 
-                if (shadow.radius != 0) {
-                    if (shadow.opacity != null) {
-                        $div.css("filter", "progid:DXImageTransform.Microsoft.Blur(pixelradius="+parseInt(shadow.radius)+", enabled='true', makeShadow='true', ShadowOpacity="+shadow.opacity+")");
+                if (shadow.radius) {
+                    if (shadow.opacity) {
+                        $div.css({
+                            filter: 'progid:DXImageTransform.Microsoft.Blur(pixelradius='
+                                + parseInt(shadow.radius)
+                                + ', makeShadow="true", ShadowOpacity='
+                                + shadow.opacity
+                                + ')'
+                        });
                     } else {
-                        $div.css("filter", "progid:DXImageTransform.Microsoft.Blur(pixelradius="+parseInt(shadow.radius)+", enabled='true')");
+/*
+                        $div.css({
+                            filter: 'progid:DXImageTransform.Microsoft.Glow(Color='
+                                + shadow.color || $element.css('color')
+                                + ', Strength='
+                                + parseInt(shadow.radius)
+                                + ')'
+                        });
+*/
+                        $div.css({
+                            filter: 'progid:DXImageTransform.Microsoft.Blur(pixelradius='
+                                + parseInt(shadow.radius)
+                                + ', makeShadow="false")'
+                        });
                     }
                 } else {
-                    if (shadow.opacity != null) {
-                        $div.css('filter', 'progid:DXImageTransform.Microsoft.Alpha(Style=1, Opacity=' + shadow.opacity + ', FinishOpacity=' + shadow.opacity + ')');
+                    if (shadow.opacity) {
+                        $div.css({
+                            filter: 'progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity='
+                                + shadow.opacity
+                                + ')'
+                        });
                     }
                 }
-                $el.append($div);
+                $element.append($div);
             }
         });
     };
@@ -84,7 +118,7 @@
                 radius : 0,
                 color  : null
             };
-            if (value.length > 1 || value[0].toLowerCase() != 'none') {
+            if (value.length > 1 || value[0].toLowerCase() !== 'none') {
                 value = value.replace(/\//g, ',');
                 var color;
                 if ( value.match(/(\#[0-9a-f]{6}|\#[0-9a-f]{3}|(rgb)a?\([^\)]*\)|\b[a-z]+\b)/i)
@@ -127,7 +161,7 @@
                         shadow.radius = value[2];
                         break;
                 }
-                if (shadow.color == 'transparent') {
+                if (shadow.color === 'transparent') {
                     shadow.x = shadow.y = shadow.radius = 0;
                     shadow.color = null;
                 }
@@ -139,14 +173,16 @@
     };
 
     $.fn.textShadowRemove = function() {
-        if (!$.browser.msie) return;
+        if (!$.browser.msie) {
+            return;
+        }
         return this.each(function() {
             $(this).children("span.jQueryTextShadow").remove();
         });
     };
 })(jQuery);
 
-if(typeof Array.prototype.map == 'undefined') {
+if(typeof Array.prototype.map === 'undefined') {
     Array.prototype.map = function(fnc) {
         var a = new Array(this.length);
         for (var i = 0; i < this.length; i++) {
@@ -155,12 +191,3 @@ if(typeof Array.prototype.map == 'undefined') {
         return a;
     }
 }
-
-$(document).ready(function() {
-    $('.emboss').textShadow();
-    $('.emboss').css('text-shadow', 'none');
-    $('.emboss-up').textShadow();
-    $('.emboss-up').css('text-shadow', 'none');
-    $('.outline').textShadow();
-    $('.outline').css('text-shadow', 'none');
-});

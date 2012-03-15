@@ -9,57 +9,125 @@
         background-color: #DDDDDD;
         font: bold 48px serif;
     }
-    .emboss, .emboss-css {
+    .emboss-down {
         color: #888888;
-        text-shadow: 0px -1px #444444, 0px 2px #FFFFFF;
+        text-shadow: 0px -1px #222222, 0px 2px #FFFFFF;
     }
-    .emboss-up, .emboss-up-css {
+    .emboss-up {
         color: #888888;
-        text-shadow: 0px -2px #FFFFFF, 0px 1px #444444;
+        text-shadow: 0px -2px #FFFFFF, 0px 1px #222222;
     }
-    .outline, .outline-css {
+    .outline {
         letter-spacing: 0.05em;
         color: #FFFFFF;
         text-shadow: 0px -1px #000000,
-        1px -1px #000000,
-        1px 0px #000000,
-        1px 1px #000000,
-        0px 1px #000000,
-        -1px 1px #000000,
-        -1px 0px #000000,
-        -1px -1px #000000;
+            1px -1px #000000,
+            1px 0px #000000,
+            1px 1px #000000,
+            0px 1px #000000,
+            -1px 1px #000000,
+            -1px 0px #000000,
+            -1px -1px #000000;
     }
-    .glow, .glow-css {
-        color: #000000;
-        text-shadow: 0px 0px 10px #FFFFFF;
+    .glow {
+        color: #FFFFFF;
+        text-shadow: 0px -3px 10px #FF0000;
+    }
+    .blur {
+        color: #666666;
+        text-shadow: 0px 0px 10px #000000;
     }
     .padding {
-        padding: 4px;
+        padding: 8px 16px;
+    }
+    .margin {
+        margin: 8px 16px;
+    }
+    .border {
+        border: 4px dashed #888888;
     }
     </style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="jquery-ie-text-shadow.js"></script>
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ie-text-shadow.js"></script>
 </head>
 <body>
-<div class="emboss">Emboss</div>
-<div class="emboss-css">Emboss</div>
-<div class="emboss-up">Emboss</div>
-<div class="emboss-up-css">Emboss</div>
-<div class="outline">Outline</div>
-<div class="outline-css">Outline</div>
-<div class="glow">Glow</div>
-<div class="glow-css">Glow</div>
+<span class="emboss-down jquery">jQuery Emboss Down, </span>
+<span class="emboss-down css">CSS Emboss Down</span><br />
+<span class="emboss-up jquery">jQuery Emboss Up, </span>
+<span class="emboss-up css">CSS Emboss Up</span><br />
+<span class="outline jquery">jQuery Outline, </span>
+<span class="outline css">CSS Outline</span><br />
+<span class="glow jquery">jQuery Glow, </span>
+<span class="glow css">CSS Glow</span><br />
+<span class="blur jquery">jQuery Blur, </span>
+<span class="blur css">CSS Blur</span>
 
-<span class="emboss">Emboss</span>
-<span class="emboss-css">Emboss</span>
-<span class="emboss-up">Emboss</span>
-<span class="emboss-up-css">Emboss</span>
-<span class="outline">Outline</span>
-<span class="outline-css">Outline</span>
-<span class="glow">Glow</span>
-<span class="glow-css">Glow</span>
+<hr />
 
-<div class="emboss padding">padding</div>
-<span class="emboss padding">padding</span>
+<div class="emboss-down jquery">div</div>
+<span class="emboss-down jquery">span</span>
+
+<hr />
+
+<div class="emboss-down padding jquery">div padding</div>
+<span class="emboss-down padding jQuery">span padding</span>
+
+<hr />
+
+<div class="emboss-down border jquery">div border</div>
+<span class="emboss-down border jquery">span border</span>
+
+<hr />
+
+<div class="emboss-down margin jquery">div margin</div>
+<span class="emboss-down margin jquery">span margin</span>
+
+<hr />
+
+<div class="emboss-down jquery">div<br />line-break</div>
+<span class="emboss-down jquery">span<br />line-break</span>
+
+<hr />
+
+<div class="emboss-down jquery">Long long long long long long long long long long long long long text</div>
+<span class="emboss-down jquery">Long long long long long long long long long long long long long text</span><br />
+Long long long long long <span class="emboss-down jquery">long long long long long long long long text</span>
+
+<hr />
+
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0)">jQuery Opacity 0, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0)">CSS Opacity 0</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.2)">0.2, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.2)">0.2</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.4)">0.4, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.4)">0.4</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.6)">0.6, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.6)">0.6</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.8)">0.8, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 0.8)">0.8</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 1)">1.0, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px rgba(255, 0, 0, 1)">1.0</span>
+
+<hr />
+
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0)">jQuery Blur Opacity 0, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0)">CSS Blur Opacity 0</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.2)">0.2, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.2)">0.2</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.4)">0.4, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.4)">0.4</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.6)">0.6, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.6)">0.6</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.8)">0.8, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.8)">0.8</span><br />
+<span class="jquery" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 1)">1.0, </span>
+<span class="css" style="color: #888888; text-shadow: 4px 4px 4px rgba(255, 0, 0, 1)">1.0</span>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.jquery').textShadow();
+        $('.jquery').css('text-shadow', 'none');
+    });
+</script>
 </body>
 </html>
