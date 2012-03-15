@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>jquery-ie-text-shadow Demo</title>
+    <style type="text/css">
+    body {
+        background-color: #DDDDDD;
+        font: bold 48px serif;
+    }
+    .emboss, .emboss-css {
+        color: #888888;
+        text-shadow: 0px -1px #444444, 0px 2px #FFFFFF;
+    }
+    .emboss-up, .emboss-up-css {
+        color: #888888;
+        text-shadow: 0px -2px #FFFFFF, 0px 1px #444444;
+    }
+    .outline, .outline-css {
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        text-shadow: 0px -1px #000000,
+        1px -1px #000000,
+        1px 0px #000000,
+        1px 1px #000000,
+        0px 1px #000000,
+        -1px 1px #000000,
+        -1px 0px #000000,
+        -1px -1px #000000;
+    }
+    .glow, .glow-css {
+        color: #000000;
+        text-shadow: 0px 0px 10px #FFFFFF;
+    }
+    .padding {
+        padding: 4px;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jquery-ie-text-shadow.js"></script>
+</head>
+<body>
+<div class="emboss">Emboss</div>
+<div class="emboss-css">Emboss</div>
+<div class="emboss-up">Emboss</div>
+<div class="emboss-up-css">Emboss</div>
+<div class="outline">Outline</div>
+<div class="outline-css">Outline</div>
+<div class="glow">Glow</div>
+<div class="glow-css">Glow</div>
+
+<span class="emboss">Emboss</span>
+<span class="emboss-css">Emboss</span>
+<span class="emboss-up">Emboss</span>
+<span class="emboss-up-css">Emboss</span>
+<span class="outline">Outline</span>
+<span class="outline-css">Outline</span>
+<span class="glow">Glow</span>
+<span class="glow-css">Glow</span>
+
+<div class="emboss padding">padding</div>
+<span class="emboss padding">padding</span>
+</body>
+</html>
