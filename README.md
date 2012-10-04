@@ -1,15 +1,23 @@
 # jquery-ie-text-shadow
 
-This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9. It's used in web site http://www.5nen10nen.com/ .
+This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
+It's used in web site [http://www.5nen10nen.com/](http://www.5nen10nen.com/) .
 
-Demonstration page is hre.
+Here is [Demonstration page](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html).
 
 ## Known Issues
 
-* When apply this library to inline elements running two or more lines, unintended line break are inserted after applyed elements. You may separate a word in a span tag to fix it.
-* When resize window and text are reflowd, shadow are separated from text unintentionally.
+* When apply to inline elements with long text running two or more lines,
+unintended line break are inserted after elements.
+You may separate a word with a span tag to fix it.
+* When apply to elements with long text and resize window and text are reflowed,
+shadows are separated from text unintentionally.
 
 ## Usage
+
+This library is jQuery plugin.
+It is necessary to include this library after jQuery
+Only include
 
 ```html
 <script src="jquery-1.7.1.min.js"></script>
