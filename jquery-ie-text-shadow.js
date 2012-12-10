@@ -57,6 +57,7 @@
                         'position':         'absolute',
                         'left':             (parseInt(shadow.x) - Math.ceil(parseFloat(shadow.radius) / 2)) + 'px',
                         'top':              (parseInt(shadow.y) - Math.ceil(parseFloat(shadow.radius) / 2)) + 'px',
+                        'border':           '0',
                         'margin':           '0',
                         'padding-top':      style['paddingTop'],
                         'padding-right':    style['paddingRight'],
@@ -65,7 +66,7 @@
                         'width':            $element.width(),
                         'height':           $element.height(),
                         'line-height':      style['lineHeight'],
-                        'zIndex':           '-1',
+                        'zIndex':           '-1000',
                         'text-align':       style['textAlign'],
                         'color':            shadow.color || $element.css('color')
                     });
