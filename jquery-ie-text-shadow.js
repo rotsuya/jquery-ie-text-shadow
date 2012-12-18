@@ -26,7 +26,7 @@
                 shadows = $element.ieTextShadowParse(style['text-shadow']);
             }
             var html = $element.html();
-            for (var i = 0, l = shadows.length; i < l; i++) {
+            for (var i = shadows.length - 1; i >= 0; i--) {
                 var shadow = shadows[i];
                 var tag = $element.get(0).tagName;
                 var BLOCKS = ['ADDRESS', 'BLOCKQUOTE', 'CENTER', 'DIV', 'DL', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',

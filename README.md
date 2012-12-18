@@ -7,7 +7,7 @@
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
 * This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
-* It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/) .
+* It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/).
 * Here is [Demonstration page](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html).
 
 ## 使い方 / Usage
@@ -59,10 +59,11 @@ $('.emboss').ieTextShadow('4px -4px 10px red, -4px -4px 10px green');
 
 * When apply to inline elements with long text running two or more lines,
 unintended line break are inserted after elements.
-You may separate a word with a span tag to fix it.
+You may separate a word with a `<span>` tag to fix it.
 * When apply to elements with long text and resize window and text are reflowed,
 shadows are separated from text unintentionally.
 
 ## 謝辞 / Acknowledgement
 
-* Original version was created by Martin Hintzmann 2008 martin [a] hintzmann.dk
+* [Original version](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/) was created
+by Martin Hintzmann 2008 martin [a] hintzmann.dk
