@@ -2,6 +2,12 @@
 
 ## 概要 / Overview
 
+![ie8](http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s400/jquery-ie-text-shadow-ie8.png)
+![safari6](http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s339/jquery-ie-text-shadow-safari6.png)
+
+<img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" />
+<img src="http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s800/jquery-ie-text-shadow-safari6.png" alt="safari6" width="339" height="309" />
+
 * Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
 * [5年後10年後 こどもたちが健やかに育つ会](http://www.5nen10nen.com/)というウェブサイトで使用しています。
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
