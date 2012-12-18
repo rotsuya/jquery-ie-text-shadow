@@ -4,7 +4,7 @@
 
 <table>
 <tr>
-<th>Windows XP, Internet Explorer 8</th>
+<th>Windows XP, Internet Explorer 8<br/>with jquery-ie-text-shadow</th>
 <th>Mac OS X 10.8, Safari 6</th></tr>
 <tr>
 <td><img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" /></td>
