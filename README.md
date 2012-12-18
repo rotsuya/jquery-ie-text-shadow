@@ -2,14 +2,13 @@
 
 ## 概要 / Overview
 
-Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
-[5年後10年後 こどもたちが健やかに育つ会](http://www.5nen10nen.com/)というウェブサイトで使用しています。
+* Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
+* [5年後10年後 こどもたちが健やかに育つ会](http://www.5nen10nen.com/)というウェブサイトで使用しています。
+* こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
-This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
-It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/) .
-
-こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
-Here is [Demonstration page](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html).
+* This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
+* It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/) .
+* Here is [Demonstration page](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html).
 
 ## 使い方 / Usage
 
