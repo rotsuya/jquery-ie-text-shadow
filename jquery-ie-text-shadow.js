@@ -20,30 +20,30 @@
             var style = this.currentStyle || document.defaultView.getComputedStyle(this, '');
             var shadows = ieTextShadowParse(option || style['text-shadow']);
             var html = $element.html();
+            var tag = $element.get(0).tagName;
+            var BLOCKS = ['ADDRESS', 'BLOCKQUOTE', 'CENTER', 'DIV', 'DL', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
+                'OL', 'P', 'PRE', 'UL'];
+            var INLINES = ['A', 'ABBR', 'ACRONYM', 'B', 'BIG', 'CITE', 'CODE', 'DFN', 'EM', 'FONT', 'I', 'KBD',
+                'LABEL', 'Q', 'S', 'SAMP', 'SMALL', 'SPAN', 'STRIKE', 'STRONG', 'TT', 'U', 'VAR'];
+            var isBlock = ($.inArray(tag, BLOCKS) !== -1);
+            var isInline = ($.inArray(tag, INLINES) !== -1);
+            $element.css({
+                'zIndex'    : '0',
+                'height'    : isBlock ? $element.height() : ''
+            });
+            if ($element.css('position') === 'static') {
+                $element.css({position: 'relative'});
+            }
+            if (isInline) {
+                $element.css({display: 'inline-block'});
+            }
+            if (isIE6) {
+                $element.css({zoom: '1'});
+            }
             for (var i = shadows.length - 1; i >= 0; i--) {
                 var shadow = shadows[i];
-                var tag = $element.get(0).tagName;
-                var BLOCKS = ['ADDRESS', 'BLOCKQUOTE', 'CENTER', 'DIV', 'DL', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
-                    'OL', 'P', 'PRE', 'UL'];
-                var INLINES = ['A', 'ABBR', 'ACRONYM', 'B', 'BIG', 'CITE', 'CODE', 'DFN', 'EM', 'FONT', 'I', 'KBD',
-                    'LABEL', 'Q', 'S', 'SAMP', 'SMALL', 'SPAN', 'STRIKE', 'STRONG', 'TT', 'U', 'VAR'];
-                var isBlock = ($.inArray(tag, BLOCKS) !== -1);
-                var isInline = ($.inArray(tag, INLINES) !== -1);
-                if (typeof shadow.opacity !== 'undefined' && shadow.opacity === 0) {
+                if (shadow.opacity === 0) {
                     continue;
-                }
-                $element.css({
-                    'zIndex'    : '0',
-                    'height'    : isBlock ? $element.height() : ''
-                });
-                if ($element.css('position') === 'static') {
-                    $element.css({position: 'relative'});
-                }
-                if (isInline) {
-                    $element.css({display: 'inline-block'});
-                }
-                if (isIE6) {
-                    $element.css({zoom: '1'});
                 }
                 var $div = $('<div></div>')
                     .addClass('jQueryTextShadow')
@@ -100,8 +100,8 @@
 
     var ieTextShadowParse = function(valueString) {
         var values
-            = valueString
-            .match(/(((#[0-9A-Fa-f]{3,6}|rgba?\(.*?\)) (\-?[0-9]+(em|px)? ?){1,3})|((\-?[0-9]+(em|px)? ){1,3}(#[0-9A-Fa-f]{3,6}|rgba?\(.*?\))))/g);
+            = valueString.split(',');
+//            .match(/(((#[0-9A-Fa-f]{3,6}|rgba?\(.*?\)) (\-?[0-9]+(em|px)? ?){2,3})|((\-?[0-9]+(em|px)? ){2,3}(#[0-9A-Fa-f]{3,6}|rgba?\(.*?\))))/g);
         if (values.length === 0) {
             return;
         }
@@ -109,8 +109,11 @@
         for (var i = 0, l = values.length; i < l; i++) {
             var value = values[i];
             value = String(value)
+                // Trim spaces in head and end of lines.
                 .replace(/^\s+|\s+$/gi, '')
+                // Remove '!important'
                 .replace(/\s*!\s*important/i, '')
+                // Change separator from comma to slash.
                 .replace(/\(\s*([^,\)]+)\s*,\s*([^,\)]+)\s*,\s*([^,\)]+)\s*,\s*([^\)]+)\s*\)/g, '($1/$2/$3/$4)')
                 .replace(/\(\s*([^,\)]+)\s*,\s*([^,\)]+)\s*,\s*([^\)]+)\s*\)/g, '($1/$2/$3)');
             var shadow = {
