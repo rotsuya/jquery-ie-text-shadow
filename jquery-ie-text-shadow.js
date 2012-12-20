@@ -100,8 +100,8 @@
 
     var ieTextShadowParse = function(valueString) {
         var values
-            = valueString.split(',');
-//            .match(/(((#[0-9A-Fa-f]{3,6}|rgba?\(.*?\)) (\-?[0-9]+(em|px)? ?){2,3})|((\-?[0-9]+(em|px)? ){2,3}(#[0-9A-Fa-f]{3,6}|rgba?\(.*?\))))/g);
+            = valueString
+            .match(/(((#[0-9A-Fa-f]{3,6}|rgba?\(.*?\)) (\-?[0-9]+(em|px)? ?){2,3})|((\-?[0-9]+(em|px)? ){2,3}(#[0-9A-Fa-f]{3,6}|rgba?\(.*?\))))/g);
         if (values.length === 0) {
             return;
         }
@@ -120,7 +120,8 @@
                 x      : 0,
                 y      : 0,
                 radius : 0,
-                color  : null
+                color  : null,
+                opacity: 1
             };
             if (value.length > 1 || value[0].toLowerCase() !== 'none') {
                 value = value.replace(/\//g, ',');
