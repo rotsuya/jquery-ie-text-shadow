@@ -18,13 +18,7 @@
             var $element = $(this);
             $element.ieTextShadowRemove();
             var style = this.currentStyle || document.defaultView.getComputedStyle(this, '');
-            var shadows;
-            if (typeof option === 'string') {
-                shadows = $element.ieTextShadowParse(option);
-            }
-            if (typeof option === 'undefined') {
-                shadows = $element.ieTextShadowParse(style['text-shadow']);
-            }
+            var shadows = ieTextShadowParse(option || style['text-shadow']);
             var html = $element.html();
             for (var i = shadows.length - 1; i >= 0; i--) {
                 var shadow = shadows[i];
@@ -104,7 +98,7 @@
         });
     };
 
-    $.fn.ieTextShadowParse = function(valueString) {
+    var ieTextShadowParse = function(valueString) {
         var values
             = valueString
             .match(/(((#[0-9A-Fa-f]{3,6}|rgba?\(.*?\)) (\-?[0-9]+(em|px)? ?){1,3})|((\-?[0-9]+(em|px)? ){1,3}(#[0-9A-Fa-f]{3,6}|rgba?\(.*?\))))/g);
