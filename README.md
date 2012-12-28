@@ -6,6 +6,17 @@
 <img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" /> .
 <img src="http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s800/jquery-ie-text-shadow-safari6.png" alt="safari6" width="339" height="309" />
 
+<table>
+  <tr>
+    <th>Windows XP, Internet Explorer 8 with jquery-ie-text-shadow</th>
+    <th>Mac OS X 10.8, Safari 6</th>
+  </tr>
+  <tr>
+    <td><img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" /></td>
+    <td><img src="http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s800/jquery-ie-text-shadow-safari6.png" alt="safari6" width="339" height="309" /></td>
+  </tr>
+</table>
+
 ## 概要 / Overview
 
 * Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
