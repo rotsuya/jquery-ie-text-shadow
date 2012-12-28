@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>jquery-ie-text-shadow Gallery</title>
+    <style type="text/css">
+        body {
+            background-color: #DDD;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: serif;
+            line-height: 1.5;
+        }
+        .emboss-up {
+            color: #888;
+            text-shadow: 0px -1px #FFF, 0px -2px #DDD, 0px 1px #000;
+        }
+        .emboss-down {
+            color: #888;
+            text-shadow: 0px -1px #000, 0px 1px #FFF, 0px 2px #EEE;
+        }
+        .outline {
+            letter-spacing: 0.05em;
+            color: #FFF;
+            text-shadow: 0px -1px #444,
+            1px -1px #444,
+            1px 0px #444,
+            1px 1px #444,
+            0px 1px #444,
+            -1px 1px #444,
+            -1px 0px #444,
+            -1px -1px #444;
+        }
+        .glow {
+            color: #FFFFFF;
+            text-shadow: 0px -3px 10px #8FF;
+        }
+        .blur {
+            color: #666666;
+            text-shadow: 0px 0px 10px #000;
+        }
+        .transparent-shadow {
+            color: #FFFFFF;
+            text-shadow: 0px 3px rgba(0, 0, 0, 0.25);
+        }
+        .blur-shadow {
+            color: #FFFFFF;
+            text-shadow: 0px 3px 4px #000;
+        }
+        .transparent-blur-shadow {
+            color: #FFFFFF;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            margin: .2em, 0;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="jquery-ie-text-shadow.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<h2>jquery-ie-text-shadow Gallery</h2>
+
+<div class="emboss-up text-shadow">Emboss Up</div>
+<div class="emboss-down text-shadow">Emboss Down</div>
+<div class="text-shadow outline">Outline</div>
+<div class="text-shadow glow">Glow</div>
+<div class="text-shadow blur">Blur</div>
+<div class="text-shadow transparent-shadow">Semi-transparent Shadow</div>
+<div class="text-shadow blur-shadow">Blur Shadow</div>
+<div class="text-shadow transparent-blur-shadow">Semi-transparent Blur Shadow</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.text-shadow').ieTextShadow();
+    });
+</script>
+
+</body>
+</html>
