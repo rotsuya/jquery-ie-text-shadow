@@ -22,7 +22,7 @@
   (VS [heygrady / textshadow](https://github.com/heygrady/textshadow)と比較)
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
-### 
+###
 
 * This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
 * It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/).
@@ -41,7 +41,9 @@ Internet Explorerの条件付きコメントを使うことをおすすめしま
 * 適用したいjQuery DOM objectに対して、`ieTextShadow()`メソッドを呼び出してください。
 * CSSの`text-shadow`プロパティで指定したスタイルが自動的に適用されます。
 
-* This library is jQuery plugin.  
+###
+
+* This library is jQuery plugin.
 It is necessary to include this library after jQuery.  
 I recommend that you use Internet Explorer's conditional comment.
 * Call `ieTextShadow()` method of jQuery DOM object that you'd like to apply text-shadow.
@@ -69,6 +71,8 @@ $(document).ready(function() {
 
 * `ieTextShadow()`メソッドの引数に、`text-shadow` プロパティの値を指定すると、CSSのスタイルを上書きできます。
 
+###
+
 * You can overwrite CSS `text-shadow` property by arguments of `ieTextShadow()` method.
 
 ```javascript
@@ -81,6 +85,8 @@ $('.emboss').ieTextShadow('4px -4px 10px red, -4px -4px 10px green');
 面倒ですが、単語ごとに`<span>`タグで区切ると回避できます。
 * ブラウザのウィンドウサイズの変更等に伴いリフローされた場合、ベースのテキストは新しい幅に合わせて再レイアウトされますが、
 `text-shadow`は再レイアウトされません。その結果、ベースのテキストとtext-shadowが分離していまいます。
+
+###
 
 * When apply to inline elements with long text running two or more lines,
 unintended line break are inserted after elements.
