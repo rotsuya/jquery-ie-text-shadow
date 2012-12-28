@@ -2,8 +2,7 @@
 
 <table>
   <tr>
-    <th>Windows XP, Internet Explorer 8  
-    with jquery-ie-text-shadow</th>
+    <th>Windows XP, Internet Explorer 8<br />with jquery-ie-text-shadow</th>
     <th>Mac OS X 10.8, Safari 6</th>
   </tr>
   <tr>
