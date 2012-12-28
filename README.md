@@ -22,6 +22,8 @@
   (VS [heygrady / textshadow](https://github.com/heygrady/textshadow)と比較)
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
+
+
 * This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
 * It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/).
 * It's superior to other similar libraries at these points.
