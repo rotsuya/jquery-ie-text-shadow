@@ -125,14 +125,14 @@
             if (value.length > 1 || value[0].toLowerCase() !== 'none') {
                 value = value.replace(/\//g, ',');
                 var color;
-                if (value.match(/(\#[0-9A-Fa-f]{6}|\#[0-9A-Fa-f]{3}|(rgb)a?\([^\)]*\)|\b[a-z]+\b)/i)
+                if (value.match(/(\#[0-9A-Fa-f]{6}|\#[0-9A-Fa-f]{3}|rgba?\([0-9\s,]*\)|\b[a-z]+\b)/i)
                     && (color = RegExp.$1) ) {
                     shadow.color = color.replace(/^\s+/, '');
                     value = value.replace(shadow.color, '');
                 }
-                var isRgb = color.match(/rgba?\(.*?\)/);
+                var isRgb = color.match(/rgba?\([0-9\s,]*\)/);
                 if (isRgb) {
-                    var rgb = color.replace(/rgba?\(/, '').replace(/\)/, '').split(',');
+                    var rgb = color.replace(/rgba?\(/, '').replace(')', '').split(',');
                     shadow.color = '#'
                         + (parseInt(rgb[0]).toString(16).length === 1 ? '0' : '')
                         + parseInt(rgb[0]).toString(16)
