@@ -2,12 +2,10 @@
 
 <table>
   <tr>
-    <th>Windows XP, Internet Explorer 8<br />with jquery-ie-text-shadow</th>
-    <th>Mac OS X 10.8, Safari 6</th>
-  </tr>
-  <tr>
-    <td><img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" /></td>
-    <td><img src="http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s800/jquery-ie-text-shadow-safari6.png" alt="safari6" width="339" height="309" /></td>
+    <td><img src="http://lh4.googleusercontent.com/-k4On9qiOuII/UNAkRO2_h8I/AAAAAAAADME/kLwD8PWglzw/s800/jquery-ie-text-shadow-ie8.png" alt="ie8" width="339" height="309" /><br />
+      Win XP, IE 8 with jquery-ie-text-shadow</td>
+    <td><img src="http://lh4.googleusercontent.com/-3REzR9lxYYI/UNAkRa3e0HI/AAAAAAAADMA/OcxVZcOCLKE/s800/jquery-ie-text-shadow-safari6.png" alt="safari6" width="339" height="309" /><br />
+      Mac OS X 10.8, Safari 6</td>
   </tr>
 </table>
 
@@ -16,9 +14,10 @@
 * Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
 * [5年後10年後 こどもたちが健やかに育つ会](http://www.5nen10nen.com/)というウェブサイトで使用しています。
 * 他の同様のライブラリと比較すると以下の点で優れています。
-  * 複数の影を指定できる
+  * 複数の影を指定できる。
   ([CSS-3 Text-Shadow](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/)と比較)
-  * 表示の再現性が高くモダンブラウザの`text-shadow`に近い
+  * 表示の再現性が高くモダンブラウザの`text-shadow`に近い。  
+    node.js を使って生成した[網羅的なテストページ](/test/test.js)でテストしています。 
   (VS [heygrady / textshadow](https://github.com/heygrady/textshadow)と比較)
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
@@ -28,16 +27,17 @@
 * It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/).
 * It's superior to other similar libraries at these points.
   * You can apply multiple shadows.
-  (VS [CSS-3 Text-Shadow](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/))
+    (VS [CSS-3 Text-Shadow](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/))
   * Quality of rendering are better and more sililar to moderen browser's `text-shadow`.
-  (VS [heygrady / textshadow](https://github.com/heygrady/textshadow))
+    Tested with [exhaustive test page](/test/test.js) generated with node.js.
+    (VS [heygrady / textshadow](https://github.com/heygrady/textshadow))
 * Here is [Demonstration page](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html).
 
 ## 使い方 / Usage
 
 * このライブラリは、jQueryのプラグインです。  
-jQueryをインクルードした後に、このライブラリをインクルードしてください。  
-Internet Explorerの条件付きコメントを使うことをおすすめします。
+  jQueryをインクルードした後に、このライブラリをインクルードしてください。  
+  Internet Explorerの条件付きコメントを使うことをおすすめします。
 * 適用したいjQuery DOM objectに対して、`ieTextShadow()`メソッドを呼び出してください。
 * CSSの`text-shadow`プロパティで指定したスタイルが自動的に適用されます。
 
@@ -82,18 +82,17 @@ $('.emboss').ieTextShadow('4px -4px 10px red, -4px -4px 10px green');
 ## 制限事項 / Known Issues
 
 * 2行以上にまたがる長いテキストに適用すると、適用部分の後に意図しない改行が入ってしまいます。
-面倒ですが、単語ごとに`<span>`タグで区切ると回避できます。
-* ブラウザのウィンドウサイズの変更等に伴いリフローされた場合、ベースのテキストは新しい幅に合わせて再レイアウトされますが、
-`text-shadow`は再レイアウトされません。その結果、ベースのテキストとtext-shadowが分離していまいます。
+  面倒ですが、単語ごとに`<span>`タグで区切ると回避できます。
+* ブラウザのウィンドウサイズの変更等に伴い、テキストがリフローされた場合、影は再レイアウトされません。その結果、ベースのテキストとtext-shadowが分離していまいます。
 
 ###
 
 * When apply to inline elements with long text running two or more lines,
-unintended line break are inserted after elements.
-You may separate a word with a `<span>` tag to fix it.
+  unintended line break are inserted after elements.
+  You may separate a word with a `<span>` tag to fix it.
 * When you resize window and text are reflowed, shadows are separated from text unintentionally.
 
 ## 謝辞 / Acknowledgement
 
 * [Original version](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/) was created
-by Martin Hintzmann 2008 martin [a] hintzmann.dk
+  by Martin Hintzmann 2008 martin [a] hintzmann.dk
