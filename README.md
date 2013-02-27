@@ -35,16 +35,14 @@
 
 ## 使い方 / Usage
 
-* このライブラリは、jQueryのプラグインです。  
-  jQueryをインクルードした後に、このライブラリをインクルードしてください。  
+* jQueryをインクルードした後に、このライブラリをインクルードしてください。  
   Internet Explorer 以外で不要な処理を実行しないため、 Internet Explorerの条件付きコメントを使うことをおすすめします。
 * 適用したい jQuery オブジェクトに対して、`ieTextShadow()`メソッドを呼び出してください。
 * CSSの`text-shadow`プロパティで指定したスタイルが自動的に適用されます。
 
 ###
 
-* This library is jQuery plugin.
-It is necessary to include this library after jQuery.  
+* It is necessary to include this library after jQuery.  
 I recommend that you use Internet Explorer's conditional comment.
 * Call `ieTextShadow()` method of jQuery DOM object that you'd like to apply text-shadow.
 * The style that defined by CSS `text-shadow` property is applied.
