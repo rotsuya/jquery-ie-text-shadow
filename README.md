@@ -11,21 +11,21 @@
 
 ## 概要 / Overview
 
-* Internet Explorer 7, 8, 9で、CSSの`text-shadow`を実現するpolyfillライブラリです。
+* Internet Explorer 7, 8, 9で、CSSの`text-shadow`を polyfill で実現する jQuery プラグインです。
 * [5年後10年後 こどもたちが健やかに育つ会](http://www.5nen10nen.com/)というウェブサイトで使用しています。
-* 他の同様のライブラリと比較すると以下の点で優れています。
+* 他の同様のプラグイン、ライブラリと比較すると以下の点で優れています。
   * 複数の影を指定できる。
   ([CSS-3 Text-Shadow](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/)と比較)
   * 表示の再現性が高くモダンブラウザの`text-shadow`に近い。  
-    node.js を使って生成した[網羅的なテストページ](/test/test.js)でテストしています。 
-  (VS [heygrady / textshadow](https://github.com/heygrady/textshadow)と比較)
+    node.js で[テストページ](/test/test.js)を生成してテストしています。  
+    ([heygrady / textshadow](https://github.com/heygrady/textshadow)と比較)
 * こちらに[デモページ](http://rotsuya.github.com/jquery-ie-text-shadow/demo.html)があります。
 
 ###
 
-* This library is `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
+* jQuery plugin for `text-shadow` polyfill for Internet Explorer 7, 8 and 9.
 * It's used in web site [www.5nen10nen.com](http://www.5nen10nen.com/).
-* It's superior to other similar libraries at these points.
+* It's superior to other similar libraries and plugins at these points.
   * You can apply multiple shadows.
     (VS [CSS-3 Text-Shadow](http://www.hintzmann.dk/testcenter/js/jquery/textshadow/))
   * Quality of rendering are better and more sililar to moderen browser's `text-shadow`.
@@ -37,8 +37,8 @@
 
 * このライブラリは、jQueryのプラグインです。  
   jQueryをインクルードした後に、このライブラリをインクルードしてください。  
-  Internet Explorerの条件付きコメントを使うことをおすすめします。
-* 適用したいjQuery DOM objectに対して、`ieTextShadow()`メソッドを呼び出してください。
+  Internet Explorer 以外で不要な処理を実行しないため、 Internet Explorerの条件付きコメントを使うことをおすすめします。
+* 適用したい jQuery オブジェクトに対して、`ieTextShadow()`メソッドを呼び出してください。
 * CSSの`text-shadow`プロパティで指定したスタイルが自動的に適用されます。
 
 ###
