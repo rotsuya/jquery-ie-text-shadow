@@ -1,0 +1,29 @@
+{
+    "name": "ie-text-shadow",
+    "title": "jQuery IE text-shadow",
+    "description": "jQuery plugin for `text-shadow` polyfill for Internet Explorer 7, 8 and 9.",
+    "keywords": [
+        "polyfill",
+        "ie",
+        "shadow",
+        "text-shadow",
+        "jquery-ie-text-shadow"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Ryosuke Otsuya",
+        "url": "https://github.com/rotsuya"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/rotsuya/jquery-ie-text-shadow/blob/master/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/rotsuya/jquery-ie-text-shadow/issues",
+    "homepage": "https://github.com/rotsuya/jquery-ie-text-shadow",
+    "docs": "https://github.com/rotsuya/jquery-ie-text-shadow",
+    "dependencies": {
+        "jquery": ">=1.2"
+    }
+}
