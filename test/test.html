@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>jquery-ie-text-shadow test</title>
+<style type="text/css">
+body {
+background-color: #DDDDDD;
+font-size: 24px;
+font-weight: bold;
+font-family: serif;
+line-height: 2;
+}
+</style>
+<script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="../jquery-ie-text-shadow.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px ">&lt;div&gt;#DB7093 0 10px </div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px ">&lt;span&gt;#DB7093 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  #DB7093">&lt;div&gt;0 10px  #DB7093</div>
+<span class="text-shadow" style="text-shadow: 0 10px  #DB7093">&lt;span&gt;0 10px  #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px ">&lt;div&gt;#DB7093 -10px 0px </div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px ">&lt;span&gt;#DB7093 -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  #DB7093">&lt;div&gt;-10px 0px  #DB7093</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  #DB7093">&lt;span&gt;-10px 0px  #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 0">&lt;div&gt;#DB7093 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 0">&lt;span&gt;#DB7093 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 #DB7093">&lt;div&gt;0 10px 0 #DB7093</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 #DB7093">&lt;span&gt;0 10px 0 #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0">&lt;div&gt;#DB7093 -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0">&lt;span&gt;#DB7093 -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 #DB7093">&lt;div&gt;-10px 0px 0 #DB7093</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 #DB7093">&lt;span&gt;-10px 0px 0 #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 0px">&lt;div&gt;#DB7093 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 0px">&lt;span&gt;#DB7093 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px #DB7093">&lt;div&gt;0 10px 0px #DB7093</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px #DB7093">&lt;span&gt;0 10px 0px #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0px">&lt;div&gt;#DB7093 -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0px">&lt;span&gt;#DB7093 -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px #DB7093">&lt;div&gt;-10px 0px 0px #DB7093</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px #DB7093">&lt;span&gt;-10px 0px 0px #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 10px">&lt;div&gt;#DB7093 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 10px">&lt;span&gt;#DB7093 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px #DB7093">&lt;div&gt;0 10px 10px #DB7093</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px #DB7093">&lt;span&gt;0 10px 10px #DB7093</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 10px">&lt;div&gt;#DB7093 -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 10px">&lt;span&gt;#DB7093 -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px #DB7093">&lt;div&gt;-10px 0px 10px #DB7093</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px #DB7093">&lt;span&gt;-10px 0px 10px #DB7093</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px ">&lt;div&gt;#20b2aa 0 10px </div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px ">&lt;span&gt;#20b2aa 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  #20b2aa">&lt;div&gt;0 10px  #20b2aa</div>
+<span class="text-shadow" style="text-shadow: 0 10px  #20b2aa">&lt;span&gt;0 10px  #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px ">&lt;div&gt;#20b2aa -10px 0px </div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px ">&lt;span&gt;#20b2aa -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  #20b2aa">&lt;div&gt;-10px 0px  #20b2aa</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  #20b2aa">&lt;span&gt;-10px 0px  #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 0">&lt;div&gt;#20b2aa 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 0">&lt;span&gt;#20b2aa 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 #20b2aa">&lt;div&gt;0 10px 0 #20b2aa</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 #20b2aa">&lt;span&gt;0 10px 0 #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0">&lt;div&gt;#20b2aa -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0">&lt;span&gt;#20b2aa -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 #20b2aa">&lt;div&gt;-10px 0px 0 #20b2aa</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 #20b2aa">&lt;span&gt;-10px 0px 0 #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 0px">&lt;div&gt;#20b2aa 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 0px">&lt;span&gt;#20b2aa 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px #20b2aa">&lt;div&gt;0 10px 0px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px #20b2aa">&lt;span&gt;0 10px 0px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0px">&lt;div&gt;#20b2aa -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0px">&lt;span&gt;#20b2aa -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px #20b2aa">&lt;div&gt;-10px 0px 0px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px #20b2aa">&lt;span&gt;-10px 0px 0px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 10px">&lt;div&gt;#20b2aa 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 10px">&lt;span&gt;#20b2aa 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px #20b2aa">&lt;div&gt;0 10px 10px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px #20b2aa">&lt;span&gt;0 10px 10px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 10px">&lt;div&gt;#20b2aa -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 10px">&lt;span&gt;#20b2aa -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px #20b2aa">&lt;div&gt;-10px 0px 10px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px #20b2aa">&lt;span&gt;-10px 0px 10px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px ">&lt;div&gt;PaleVioletRed 0 10px </div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px ">&lt;span&gt;PaleVioletRed 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  PaleVioletRed">&lt;div&gt;0 10px  PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: 0 10px  PaleVioletRed">&lt;span&gt;0 10px  PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px ">&lt;div&gt;PaleVioletRed -10px 0px </div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px ">&lt;span&gt;PaleVioletRed -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  PaleVioletRed">&lt;div&gt;-10px 0px  PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  PaleVioletRed">&lt;span&gt;-10px 0px  PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0">&lt;div&gt;PaleVioletRed 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0">&lt;span&gt;PaleVioletRed 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 PaleVioletRed">&lt;div&gt;0 10px 0 PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 PaleVioletRed">&lt;span&gt;0 10px 0 PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0">&lt;div&gt;PaleVioletRed -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0">&lt;span&gt;PaleVioletRed -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 PaleVioletRed">&lt;div&gt;-10px 0px 0 PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 PaleVioletRed">&lt;span&gt;-10px 0px 0 PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0px">&lt;div&gt;PaleVioletRed 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0px">&lt;span&gt;PaleVioletRed 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px PaleVioletRed">&lt;div&gt;0 10px 0px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px PaleVioletRed">&lt;span&gt;0 10px 0px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0px">&lt;div&gt;PaleVioletRed -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0px">&lt;span&gt;PaleVioletRed -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px PaleVioletRed">&lt;div&gt;-10px 0px 0px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px PaleVioletRed">&lt;span&gt;-10px 0px 0px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 10px">&lt;div&gt;PaleVioletRed 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 10px">&lt;span&gt;PaleVioletRed 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px PaleVioletRed">&lt;div&gt;0 10px 10px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px PaleVioletRed">&lt;span&gt;0 10px 10px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 10px">&lt;div&gt;PaleVioletRed -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 10px">&lt;span&gt;PaleVioletRed -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px PaleVioletRed">&lt;div&gt;-10px 0px 10px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px PaleVioletRed">&lt;span&gt;-10px 0px 10px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px ">&lt;div&gt;LightSeaGreen 0 10px </div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px ">&lt;span&gt;LightSeaGreen 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  LightSeaGreen">&lt;div&gt;0 10px  LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: 0 10px  LightSeaGreen">&lt;span&gt;0 10px  LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px ">&lt;div&gt;LightSeaGreen -10px 0px </div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px ">&lt;span&gt;LightSeaGreen -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  LightSeaGreen">&lt;div&gt;-10px 0px  LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  LightSeaGreen">&lt;span&gt;-10px 0px  LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0">&lt;div&gt;LightSeaGreen 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0">&lt;span&gt;LightSeaGreen 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 LightSeaGreen">&lt;div&gt;0 10px 0 LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 LightSeaGreen">&lt;span&gt;0 10px 0 LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0">&lt;div&gt;LightSeaGreen -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0">&lt;span&gt;LightSeaGreen -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 LightSeaGreen">&lt;div&gt;-10px 0px 0 LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 LightSeaGreen">&lt;span&gt;-10px 0px 0 LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0px">&lt;div&gt;LightSeaGreen 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0px">&lt;span&gt;LightSeaGreen 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px LightSeaGreen">&lt;div&gt;0 10px 0px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px LightSeaGreen">&lt;span&gt;0 10px 0px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0px">&lt;div&gt;LightSeaGreen -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0px">&lt;span&gt;LightSeaGreen -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px LightSeaGreen">&lt;div&gt;-10px 0px 0px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px LightSeaGreen">&lt;span&gt;-10px 0px 0px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 10px">&lt;div&gt;LightSeaGreen 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 10px">&lt;span&gt;LightSeaGreen 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px LightSeaGreen">&lt;div&gt;0 10px 10px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px LightSeaGreen">&lt;span&gt;0 10px 10px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 10px">&lt;div&gt;LightSeaGreen -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 10px">&lt;span&gt;LightSeaGreen -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px LightSeaGreen">&lt;div&gt;-10px 0px 10px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px LightSeaGreen">&lt;span&gt;-10px 0px 10px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px ">&lt;div&gt;rgb(219, 112, 147) 0 10px </div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px ">&lt;span&gt;rgb(219, 112, 147) 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgb(219, 112, 147)">&lt;div&gt;0 10px  rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgb(219, 112, 147)">&lt;span&gt;0 10px  rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px ">&lt;div&gt;rgb(219, 112, 147) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px ">&lt;span&gt;rgb(219, 112, 147) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgb(219, 112, 147)">&lt;div&gt;-10px 0px  rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgb(219, 112, 147)">&lt;span&gt;-10px 0px  rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0">&lt;div&gt;rgb(219, 112, 147) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0">&lt;span&gt;rgb(219, 112, 147) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgb(219, 112, 147)">&lt;div&gt;0 10px 0 rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgb(219, 112, 147)">&lt;span&gt;0 10px 0 rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0">&lt;div&gt;rgb(219, 112, 147) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0">&lt;span&gt;rgb(219, 112, 147) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgb(219, 112, 147)">&lt;div&gt;-10px 0px 0 rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgb(219, 112, 147)">&lt;span&gt;-10px 0px 0 rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0px">&lt;div&gt;rgb(219, 112, 147) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0px">&lt;span&gt;rgb(219, 112, 147) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgb(219, 112, 147)">&lt;div&gt;0 10px 0px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgb(219, 112, 147)">&lt;span&gt;0 10px 0px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0px">&lt;div&gt;rgb(219, 112, 147) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0px">&lt;span&gt;rgb(219, 112, 147) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgb(219, 112, 147)">&lt;div&gt;-10px 0px 0px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgb(219, 112, 147)">&lt;span&gt;-10px 0px 0px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 10px">&lt;div&gt;rgb(219, 112, 147) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 10px">&lt;span&gt;rgb(219, 112, 147) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgb(219, 112, 147)">&lt;div&gt;0 10px 10px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgb(219, 112, 147)">&lt;span&gt;0 10px 10px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 10px">&lt;div&gt;rgb(219, 112, 147) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 10px">&lt;span&gt;rgb(219, 112, 147) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgb(219, 112, 147)">&lt;div&gt;-10px 0px 10px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgb(219, 112, 147)">&lt;span&gt;-10px 0px 10px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px ">&lt;div&gt;rgba(32,178,170,0) 0 10px </div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px ">&lt;span&gt;rgba(32,178,170,0) 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0)">&lt;div&gt;0 10px  rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0)">&lt;span&gt;0 10px  rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px ">&lt;div&gt;rgba(32,178,170,0) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px ">&lt;span&gt;rgba(32,178,170,0) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0)">&lt;div&gt;-10px 0px  rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0)">&lt;span&gt;-10px 0px  rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0">&lt;div&gt;rgba(32,178,170,0) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0">&lt;span&gt;rgba(32,178,170,0) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0)">&lt;div&gt;0 10px 0 rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0)">&lt;span&gt;0 10px 0 rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0">&lt;div&gt;rgba(32,178,170,0) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0">&lt;span&gt;rgba(32,178,170,0) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0)">&lt;div&gt;-10px 0px 0 rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0)">&lt;span&gt;-10px 0px 0 rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0px">&lt;div&gt;rgba(32,178,170,0) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0px">&lt;span&gt;rgba(32,178,170,0) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0)">&lt;div&gt;0 10px 0px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0)">&lt;span&gt;0 10px 0px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0px">&lt;div&gt;rgba(32,178,170,0) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0px">&lt;span&gt;rgba(32,178,170,0) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0)">&lt;div&gt;-10px 0px 0px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0)">&lt;span&gt;-10px 0px 0px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 10px">&lt;div&gt;rgba(32,178,170,0) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 10px">&lt;span&gt;rgba(32,178,170,0) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0)">&lt;div&gt;0 10px 10px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0)">&lt;span&gt;0 10px 10px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 10px">&lt;div&gt;rgba(32,178,170,0) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 10px">&lt;span&gt;rgba(32,178,170,0) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0)">&lt;div&gt;-10px 0px 10px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0)">&lt;span&gt;-10px 0px 10px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px ">&lt;div&gt;rgba(32,178,170,0.5) 0 10px </div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px ">&lt;span&gt;rgba(32,178,170,0.5) 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0.5)">&lt;div&gt;0 10px  rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0.5)">&lt;span&gt;0 10px  rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px ">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px ">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0.5)">&lt;div&gt;-10px 0px  rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0.5)">&lt;span&gt;-10px 0px  rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0.5)">&lt;div&gt;0 10px 0 rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0.5)">&lt;span&gt;0 10px 0 rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0.5)">&lt;div&gt;-10px 0px 0 rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0.5)">&lt;span&gt;-10px 0px 0 rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0px">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0px">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0.5)">&lt;div&gt;0 10px 0px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0.5)">&lt;span&gt;0 10px 0px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0px">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0px">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0.5)">&lt;div&gt;-10px 0px 0px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0.5)">&lt;span&gt;-10px 0px 0px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 10px">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 10px">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0.5)">&lt;div&gt;0 10px 10px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0.5)">&lt;span&gt;0 10px 10px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 10px">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 10px">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0.5)">&lt;div&gt;-10px 0px 10px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0.5)">&lt;span&gt;-10px 0px 10px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px ">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px </div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px ">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px </span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32, 178, 170, 1)">&lt;div&gt;0 10px  rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32, 178, 170, 1)">&lt;span&gt;0 10px  rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px ">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px ">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32, 178, 170, 1)">&lt;div&gt;-10px 0px  rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32, 178, 170, 1)">&lt;span&gt;-10px 0px  rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32, 178, 170, 1)">&lt;div&gt;0 10px 0 rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32, 178, 170, 1)">&lt;span&gt;0 10px 0 rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32, 178, 170, 1)">&lt;div&gt;-10px 0px 0 rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32, 178, 170, 1)">&lt;span&gt;-10px 0px 0 rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0px">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0px">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32, 178, 170, 1)">&lt;div&gt;0 10px 0px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32, 178, 170, 1)">&lt;span&gt;0 10px 0px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0px">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0px">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32, 178, 170, 1)">&lt;div&gt;-10px 0px 0px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32, 178, 170, 1)">&lt;span&gt;-10px 0px 0px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 10px">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 10px">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32, 178, 170, 1)">&lt;div&gt;0 10px 10px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32, 178, 170, 1)">&lt;span&gt;0 10px 10px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 10px">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 10px">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32, 178, 170, 1)">&lt;div&gt;-10px 0px 10px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32, 178, 170, 1)">&lt;span&gt;-10px 0px 10px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px , -10px 0px 10px rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 0 10px , -10px 0px 10px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px , -10px 0px 10px rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 0 10px , -10px 0px 10px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: 0 10px  #DB7093, rgba(32, 178, 170, 1) -10px 0px 10px">&lt;div&gt;0 10px  #DB7093, rgba(32, 178, 170, 1) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  #DB7093, rgba(32, 178, 170, 1) -10px 0px 10px">&lt;span&gt;0 10px  #DB7093, rgba(32, 178, 170, 1) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px , 0 10px 10px rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 -10px 0px , 0 10px 10px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px , 0 10px 10px rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 -10px 0px , 0 10px 10px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  #DB7093, rgba(32, 178, 170, 1) 0 10px 10px">&lt;div&gt;-10px 0px  #DB7093, rgba(32, 178, 170, 1) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  #DB7093, rgba(32, 178, 170, 1) 0 10px 10px">&lt;span&gt;-10px 0px  #DB7093, rgba(32, 178, 170, 1) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 0, -10px 0px 0px rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 0 10px 0, -10px 0px 0px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 0, -10px 0px 0px rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 0 10px 0, -10px 0px 0px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 #DB7093, rgba(32, 178, 170, 1) -10px 0px 0px">&lt;div&gt;0 10px 0 #DB7093, rgba(32, 178, 170, 1) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 #DB7093, rgba(32, 178, 170, 1) -10px 0px 0px">&lt;span&gt;0 10px 0 #DB7093, rgba(32, 178, 170, 1) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0, 0 10px 0px rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 -10px 0px 0, 0 10px 0px rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0, 0 10px 0px rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 -10px 0px 0, 0 10px 0px rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 #DB7093, rgba(32, 178, 170, 1) 0 10px 0px">&lt;div&gt;-10px 0px 0 #DB7093, rgba(32, 178, 170, 1) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 #DB7093, rgba(32, 178, 170, 1) 0 10px 0px">&lt;span&gt;-10px 0px 0 #DB7093, rgba(32, 178, 170, 1) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 0px, -10px 0px 0 rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 0 10px 0px, -10px 0px 0 rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 0px, -10px 0px 0 rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 0 10px 0px, -10px 0px 0 rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px #DB7093, rgba(32, 178, 170, 1) -10px 0px 0">&lt;div&gt;0 10px 0px #DB7093, rgba(32, 178, 170, 1) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px #DB7093, rgba(32, 178, 170, 1) -10px 0px 0">&lt;span&gt;0 10px 0px #DB7093, rgba(32, 178, 170, 1) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0px, 0 10px 0 rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 -10px 0px 0px, 0 10px 0 rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 0px, 0 10px 0 rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 -10px 0px 0px, 0 10px 0 rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px #DB7093, rgba(32, 178, 170, 1) 0 10px 0">&lt;div&gt;-10px 0px 0px #DB7093, rgba(32, 178, 170, 1) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px #DB7093, rgba(32, 178, 170, 1) 0 10px 0">&lt;span&gt;-10px 0px 0px #DB7093, rgba(32, 178, 170, 1) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: #DB7093 0 10px 10px, -10px 0px  rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 0 10px 10px, -10px 0px  rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 0 10px 10px, -10px 0px  rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 0 10px 10px, -10px 0px  rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px #DB7093, rgba(32, 178, 170, 1) -10px 0px ">&lt;div&gt;0 10px 10px #DB7093, rgba(32, 178, 170, 1) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px #DB7093, rgba(32, 178, 170, 1) -10px 0px ">&lt;span&gt;0 10px 10px #DB7093, rgba(32, 178, 170, 1) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: #DB7093 -10px 0px 10px, 0 10px  rgba(32, 178, 170, 1)">&lt;div&gt;#DB7093 -10px 0px 10px, 0 10px  rgba(32, 178, 170, 1)</div>
+<span class="text-shadow" style="text-shadow: #DB7093 -10px 0px 10px, 0 10px  rgba(32, 178, 170, 1)">&lt;span&gt;#DB7093 -10px 0px 10px, 0 10px  rgba(32, 178, 170, 1)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px #DB7093, rgba(32, 178, 170, 1) 0 10px ">&lt;div&gt;-10px 0px 10px #DB7093, rgba(32, 178, 170, 1) 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px #DB7093, rgba(32, 178, 170, 1) 0 10px ">&lt;span&gt;-10px 0px 10px #DB7093, rgba(32, 178, 170, 1) 0 10px </span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px , -10px 0px 10px rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa 0 10px , -10px 0px 10px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px , -10px 0px 10px rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa 0 10px , -10px 0px 10px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: 0 10px  #20b2aa, rgba(32,178,170,0.5) -10px 0px 10px">&lt;div&gt;0 10px  #20b2aa, rgba(32,178,170,0.5) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  #20b2aa, rgba(32,178,170,0.5) -10px 0px 10px">&lt;span&gt;0 10px  #20b2aa, rgba(32,178,170,0.5) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px , 0 10px 10px rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa -10px 0px , 0 10px 10px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px , 0 10px 10px rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa -10px 0px , 0 10px 10px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  #20b2aa, rgba(32,178,170,0.5) 0 10px 10px">&lt;div&gt;-10px 0px  #20b2aa, rgba(32,178,170,0.5) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  #20b2aa, rgba(32,178,170,0.5) 0 10px 10px">&lt;span&gt;-10px 0px  #20b2aa, rgba(32,178,170,0.5) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 0, -10px 0px 0px rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa 0 10px 0, -10px 0px 0px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 0, -10px 0px 0px rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa 0 10px 0, -10px 0px 0px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 #20b2aa, rgba(32,178,170,0.5) -10px 0px 0px">&lt;div&gt;0 10px 0 #20b2aa, rgba(32,178,170,0.5) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 #20b2aa, rgba(32,178,170,0.5) -10px 0px 0px">&lt;span&gt;0 10px 0 #20b2aa, rgba(32,178,170,0.5) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0, 0 10px 0px rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa -10px 0px 0, 0 10px 0px rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0, 0 10px 0px rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa -10px 0px 0, 0 10px 0px rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 #20b2aa, rgba(32,178,170,0.5) 0 10px 0px">&lt;div&gt;-10px 0px 0 #20b2aa, rgba(32,178,170,0.5) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 #20b2aa, rgba(32,178,170,0.5) 0 10px 0px">&lt;span&gt;-10px 0px 0 #20b2aa, rgba(32,178,170,0.5) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 0px, -10px 0px 0 rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa 0 10px 0px, -10px 0px 0 rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 0px, -10px 0px 0 rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa 0 10px 0px, -10px 0px 0 rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px #20b2aa, rgba(32,178,170,0.5) -10px 0px 0">&lt;div&gt;0 10px 0px #20b2aa, rgba(32,178,170,0.5) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px #20b2aa, rgba(32,178,170,0.5) -10px 0px 0">&lt;span&gt;0 10px 0px #20b2aa, rgba(32,178,170,0.5) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0px, 0 10px 0 rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa -10px 0px 0px, 0 10px 0 rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 0px, 0 10px 0 rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa -10px 0px 0px, 0 10px 0 rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px #20b2aa, rgba(32,178,170,0.5) 0 10px 0">&lt;div&gt;-10px 0px 0px #20b2aa, rgba(32,178,170,0.5) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px #20b2aa, rgba(32,178,170,0.5) 0 10px 0">&lt;span&gt;-10px 0px 0px #20b2aa, rgba(32,178,170,0.5) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: #20b2aa 0 10px 10px, -10px 0px  rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa 0 10px 10px, -10px 0px  rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa 0 10px 10px, -10px 0px  rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa 0 10px 10px, -10px 0px  rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px #20b2aa, rgba(32,178,170,0.5) -10px 0px ">&lt;div&gt;0 10px 10px #20b2aa, rgba(32,178,170,0.5) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px #20b2aa, rgba(32,178,170,0.5) -10px 0px ">&lt;span&gt;0 10px 10px #20b2aa, rgba(32,178,170,0.5) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: #20b2aa -10px 0px 10px, 0 10px  rgba(32,178,170,0.5)">&lt;div&gt;#20b2aa -10px 0px 10px, 0 10px  rgba(32,178,170,0.5)</div>
+<span class="text-shadow" style="text-shadow: #20b2aa -10px 0px 10px, 0 10px  rgba(32,178,170,0.5)">&lt;span&gt;#20b2aa -10px 0px 10px, 0 10px  rgba(32,178,170,0.5)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px #20b2aa, rgba(32,178,170,0.5) 0 10px ">&lt;div&gt;-10px 0px 10px #20b2aa, rgba(32,178,170,0.5) 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px #20b2aa, rgba(32,178,170,0.5) 0 10px ">&lt;span&gt;-10px 0px 10px #20b2aa, rgba(32,178,170,0.5) 0 10px </span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px , -10px 0px 10px rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed 0 10px , -10px 0px 10px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px , -10px 0px 10px rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed 0 10px , -10px 0px 10px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: 0 10px  PaleVioletRed, rgba(32,178,170,0) -10px 0px 10px">&lt;div&gt;0 10px  PaleVioletRed, rgba(32,178,170,0) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  PaleVioletRed, rgba(32,178,170,0) -10px 0px 10px">&lt;span&gt;0 10px  PaleVioletRed, rgba(32,178,170,0) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px , 0 10px 10px rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed -10px 0px , 0 10px 10px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px , 0 10px 10px rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed -10px 0px , 0 10px 10px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  PaleVioletRed, rgba(32,178,170,0) 0 10px 10px">&lt;div&gt;-10px 0px  PaleVioletRed, rgba(32,178,170,0) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  PaleVioletRed, rgba(32,178,170,0) 0 10px 10px">&lt;span&gt;-10px 0px  PaleVioletRed, rgba(32,178,170,0) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0, -10px 0px 0px rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed 0 10px 0, -10px 0px 0px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0, -10px 0px 0px rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed 0 10px 0, -10px 0px 0px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 PaleVioletRed, rgba(32,178,170,0) -10px 0px 0px">&lt;div&gt;0 10px 0 PaleVioletRed, rgba(32,178,170,0) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 PaleVioletRed, rgba(32,178,170,0) -10px 0px 0px">&lt;span&gt;0 10px 0 PaleVioletRed, rgba(32,178,170,0) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0, 0 10px 0px rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed -10px 0px 0, 0 10px 0px rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0, 0 10px 0px rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed -10px 0px 0, 0 10px 0px rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 PaleVioletRed, rgba(32,178,170,0) 0 10px 0px">&lt;div&gt;-10px 0px 0 PaleVioletRed, rgba(32,178,170,0) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 PaleVioletRed, rgba(32,178,170,0) 0 10px 0px">&lt;span&gt;-10px 0px 0 PaleVioletRed, rgba(32,178,170,0) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0px, -10px 0px 0 rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed 0 10px 0px, -10px 0px 0 rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 0px, -10px 0px 0 rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed 0 10px 0px, -10px 0px 0 rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px PaleVioletRed, rgba(32,178,170,0) -10px 0px 0">&lt;div&gt;0 10px 0px PaleVioletRed, rgba(32,178,170,0) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px PaleVioletRed, rgba(32,178,170,0) -10px 0px 0">&lt;span&gt;0 10px 0px PaleVioletRed, rgba(32,178,170,0) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0px, 0 10px 0 rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed -10px 0px 0px, 0 10px 0 rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 0px, 0 10px 0 rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed -10px 0px 0px, 0 10px 0 rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px PaleVioletRed, rgba(32,178,170,0) 0 10px 0">&lt;div&gt;-10px 0px 0px PaleVioletRed, rgba(32,178,170,0) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px PaleVioletRed, rgba(32,178,170,0) 0 10px 0">&lt;span&gt;-10px 0px 0px PaleVioletRed, rgba(32,178,170,0) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 10px, -10px 0px  rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed 0 10px 10px, -10px 0px  rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed 0 10px 10px, -10px 0px  rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed 0 10px 10px, -10px 0px  rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px PaleVioletRed, rgba(32,178,170,0) -10px 0px ">&lt;div&gt;0 10px 10px PaleVioletRed, rgba(32,178,170,0) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px PaleVioletRed, rgba(32,178,170,0) -10px 0px ">&lt;span&gt;0 10px 10px PaleVioletRed, rgba(32,178,170,0) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 10px, 0 10px  rgba(32,178,170,0)">&lt;div&gt;PaleVioletRed -10px 0px 10px, 0 10px  rgba(32,178,170,0)</div>
+<span class="text-shadow" style="text-shadow: PaleVioletRed -10px 0px 10px, 0 10px  rgba(32,178,170,0)">&lt;span&gt;PaleVioletRed -10px 0px 10px, 0 10px  rgba(32,178,170,0)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px PaleVioletRed, rgba(32,178,170,0) 0 10px ">&lt;div&gt;-10px 0px 10px PaleVioletRed, rgba(32,178,170,0) 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px PaleVioletRed, rgba(32,178,170,0) 0 10px ">&lt;span&gt;-10px 0px 10px PaleVioletRed, rgba(32,178,170,0) 0 10px </span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px , -10px 0px 10px rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen 0 10px , -10px 0px 10px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px , -10px 0px 10px rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen 0 10px , -10px 0px 10px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: 0 10px  LightSeaGreen, rgb(219, 112, 147) -10px 0px 10px">&lt;div&gt;0 10px  LightSeaGreen, rgb(219, 112, 147) -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  LightSeaGreen, rgb(219, 112, 147) -10px 0px 10px">&lt;span&gt;0 10px  LightSeaGreen, rgb(219, 112, 147) -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px , 0 10px 10px rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen -10px 0px , 0 10px 10px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px , 0 10px 10px rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen -10px 0px , 0 10px 10px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  LightSeaGreen, rgb(219, 112, 147) 0 10px 10px">&lt;div&gt;-10px 0px  LightSeaGreen, rgb(219, 112, 147) 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  LightSeaGreen, rgb(219, 112, 147) 0 10px 10px">&lt;span&gt;-10px 0px  LightSeaGreen, rgb(219, 112, 147) 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0, -10px 0px 0px rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen 0 10px 0, -10px 0px 0px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0, -10px 0px 0px rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen 0 10px 0, -10px 0px 0px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 LightSeaGreen, rgb(219, 112, 147) -10px 0px 0px">&lt;div&gt;0 10px 0 LightSeaGreen, rgb(219, 112, 147) -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 LightSeaGreen, rgb(219, 112, 147) -10px 0px 0px">&lt;span&gt;0 10px 0 LightSeaGreen, rgb(219, 112, 147) -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0, 0 10px 0px rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen -10px 0px 0, 0 10px 0px rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0, 0 10px 0px rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen -10px 0px 0, 0 10px 0px rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 LightSeaGreen, rgb(219, 112, 147) 0 10px 0px">&lt;div&gt;-10px 0px 0 LightSeaGreen, rgb(219, 112, 147) 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 LightSeaGreen, rgb(219, 112, 147) 0 10px 0px">&lt;span&gt;-10px 0px 0 LightSeaGreen, rgb(219, 112, 147) 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0px, -10px 0px 0 rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen 0 10px 0px, -10px 0px 0 rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 0px, -10px 0px 0 rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen 0 10px 0px, -10px 0px 0 rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px LightSeaGreen, rgb(219, 112, 147) -10px 0px 0">&lt;div&gt;0 10px 0px LightSeaGreen, rgb(219, 112, 147) -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px LightSeaGreen, rgb(219, 112, 147) -10px 0px 0">&lt;span&gt;0 10px 0px LightSeaGreen, rgb(219, 112, 147) -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0px, 0 10px 0 rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen -10px 0px 0px, 0 10px 0 rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 0px, 0 10px 0 rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen -10px 0px 0px, 0 10px 0 rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px LightSeaGreen, rgb(219, 112, 147) 0 10px 0">&lt;div&gt;-10px 0px 0px LightSeaGreen, rgb(219, 112, 147) 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px LightSeaGreen, rgb(219, 112, 147) 0 10px 0">&lt;span&gt;-10px 0px 0px LightSeaGreen, rgb(219, 112, 147) 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 10px, -10px 0px  rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen 0 10px 10px, -10px 0px  rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen 0 10px 10px, -10px 0px  rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen 0 10px 10px, -10px 0px  rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px LightSeaGreen, rgb(219, 112, 147) -10px 0px ">&lt;div&gt;0 10px 10px LightSeaGreen, rgb(219, 112, 147) -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px LightSeaGreen, rgb(219, 112, 147) -10px 0px ">&lt;span&gt;0 10px 10px LightSeaGreen, rgb(219, 112, 147) -10px 0px </span>
+<div class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 10px, 0 10px  rgb(219, 112, 147)">&lt;div&gt;LightSeaGreen -10px 0px 10px, 0 10px  rgb(219, 112, 147)</div>
+<span class="text-shadow" style="text-shadow: LightSeaGreen -10px 0px 10px, 0 10px  rgb(219, 112, 147)">&lt;span&gt;LightSeaGreen -10px 0px 10px, 0 10px  rgb(219, 112, 147)</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px LightSeaGreen, rgb(219, 112, 147) 0 10px ">&lt;div&gt;-10px 0px 10px LightSeaGreen, rgb(219, 112, 147) 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px LightSeaGreen, rgb(219, 112, 147) 0 10px ">&lt;span&gt;-10px 0px 10px LightSeaGreen, rgb(219, 112, 147) 0 10px </span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px , -10px 0px 10px LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) 0 10px , -10px 0px 10px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px , -10px 0px 10px LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) 0 10px , -10px 0px 10px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgb(219, 112, 147), LightSeaGreen -10px 0px 10px">&lt;div&gt;0 10px  rgb(219, 112, 147), LightSeaGreen -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgb(219, 112, 147), LightSeaGreen -10px 0px 10px">&lt;span&gt;0 10px  rgb(219, 112, 147), LightSeaGreen -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px , 0 10px 10px LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) -10px 0px , 0 10px 10px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px , 0 10px 10px LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) -10px 0px , 0 10px 10px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgb(219, 112, 147), LightSeaGreen 0 10px 10px">&lt;div&gt;-10px 0px  rgb(219, 112, 147), LightSeaGreen 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgb(219, 112, 147), LightSeaGreen 0 10px 10px">&lt;span&gt;-10px 0px  rgb(219, 112, 147), LightSeaGreen 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0, -10px 0px 0px LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) 0 10px 0, -10px 0px 0px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0, -10px 0px 0px LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) 0 10px 0, -10px 0px 0px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgb(219, 112, 147), LightSeaGreen -10px 0px 0px">&lt;div&gt;0 10px 0 rgb(219, 112, 147), LightSeaGreen -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgb(219, 112, 147), LightSeaGreen -10px 0px 0px">&lt;span&gt;0 10px 0 rgb(219, 112, 147), LightSeaGreen -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0, 0 10px 0px LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) -10px 0px 0, 0 10px 0px LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0, 0 10px 0px LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) -10px 0px 0, 0 10px 0px LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgb(219, 112, 147), LightSeaGreen 0 10px 0px">&lt;div&gt;-10px 0px 0 rgb(219, 112, 147), LightSeaGreen 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgb(219, 112, 147), LightSeaGreen 0 10px 0px">&lt;span&gt;-10px 0px 0 rgb(219, 112, 147), LightSeaGreen 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0px, -10px 0px 0 LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) 0 10px 0px, -10px 0px 0 LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 0px, -10px 0px 0 LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) 0 10px 0px, -10px 0px 0 LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgb(219, 112, 147), LightSeaGreen -10px 0px 0">&lt;div&gt;0 10px 0px rgb(219, 112, 147), LightSeaGreen -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgb(219, 112, 147), LightSeaGreen -10px 0px 0">&lt;span&gt;0 10px 0px rgb(219, 112, 147), LightSeaGreen -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0px, 0 10px 0 LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) -10px 0px 0px, 0 10px 0 LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 0px, 0 10px 0 LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) -10px 0px 0px, 0 10px 0 LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgb(219, 112, 147), LightSeaGreen 0 10px 0">&lt;div&gt;-10px 0px 0px rgb(219, 112, 147), LightSeaGreen 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgb(219, 112, 147), LightSeaGreen 0 10px 0">&lt;span&gt;-10px 0px 0px rgb(219, 112, 147), LightSeaGreen 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 10px, -10px 0px  LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) 0 10px 10px, -10px 0px  LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) 0 10px 10px, -10px 0px  LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) 0 10px 10px, -10px 0px  LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgb(219, 112, 147), LightSeaGreen -10px 0px ">&lt;div&gt;0 10px 10px rgb(219, 112, 147), LightSeaGreen -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgb(219, 112, 147), LightSeaGreen -10px 0px ">&lt;span&gt;0 10px 10px rgb(219, 112, 147), LightSeaGreen -10px 0px </span>
+<div class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 10px, 0 10px  LightSeaGreen">&lt;div&gt;rgb(219, 112, 147) -10px 0px 10px, 0 10px  LightSeaGreen</div>
+<span class="text-shadow" style="text-shadow: rgb(219, 112, 147) -10px 0px 10px, 0 10px  LightSeaGreen">&lt;span&gt;rgb(219, 112, 147) -10px 0px 10px, 0 10px  LightSeaGreen</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgb(219, 112, 147), LightSeaGreen 0 10px ">&lt;div&gt;-10px 0px 10px rgb(219, 112, 147), LightSeaGreen 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgb(219, 112, 147), LightSeaGreen 0 10px ">&lt;span&gt;-10px 0px 10px rgb(219, 112, 147), LightSeaGreen 0 10px </span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px , -10px 0px 10px PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) 0 10px , -10px 0px 10px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px , -10px 0px 10px PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) 0 10px , -10px 0px 10px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0), PaleVioletRed -10px 0px 10px">&lt;div&gt;0 10px  rgba(32,178,170,0), PaleVioletRed -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0), PaleVioletRed -10px 0px 10px">&lt;span&gt;0 10px  rgba(32,178,170,0), PaleVioletRed -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px , 0 10px 10px PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) -10px 0px , 0 10px 10px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px , 0 10px 10px PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) -10px 0px , 0 10px 10px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0), PaleVioletRed 0 10px 10px">&lt;div&gt;-10px 0px  rgba(32,178,170,0), PaleVioletRed 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0), PaleVioletRed 0 10px 10px">&lt;span&gt;-10px 0px  rgba(32,178,170,0), PaleVioletRed 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0, -10px 0px 0px PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) 0 10px 0, -10px 0px 0px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0, -10px 0px 0px PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) 0 10px 0, -10px 0px 0px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0), PaleVioletRed -10px 0px 0px">&lt;div&gt;0 10px 0 rgba(32,178,170,0), PaleVioletRed -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0), PaleVioletRed -10px 0px 0px">&lt;span&gt;0 10px 0 rgba(32,178,170,0), PaleVioletRed -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0, 0 10px 0px PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) -10px 0px 0, 0 10px 0px PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0, 0 10px 0px PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) -10px 0px 0, 0 10px 0px PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0), PaleVioletRed 0 10px 0px">&lt;div&gt;-10px 0px 0 rgba(32,178,170,0), PaleVioletRed 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0), PaleVioletRed 0 10px 0px">&lt;span&gt;-10px 0px 0 rgba(32,178,170,0), PaleVioletRed 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0px, -10px 0px 0 PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) 0 10px 0px, -10px 0px 0 PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 0px, -10px 0px 0 PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) 0 10px 0px, -10px 0px 0 PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0), PaleVioletRed -10px 0px 0">&lt;div&gt;0 10px 0px rgba(32,178,170,0), PaleVioletRed -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0), PaleVioletRed -10px 0px 0">&lt;span&gt;0 10px 0px rgba(32,178,170,0), PaleVioletRed -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0px, 0 10px 0 PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) -10px 0px 0px, 0 10px 0 PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 0px, 0 10px 0 PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) -10px 0px 0px, 0 10px 0 PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0), PaleVioletRed 0 10px 0">&lt;div&gt;-10px 0px 0px rgba(32,178,170,0), PaleVioletRed 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0), PaleVioletRed 0 10px 0">&lt;span&gt;-10px 0px 0px rgba(32,178,170,0), PaleVioletRed 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 10px, -10px 0px  PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) 0 10px 10px, -10px 0px  PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) 0 10px 10px, -10px 0px  PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) 0 10px 10px, -10px 0px  PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0), PaleVioletRed -10px 0px ">&lt;div&gt;0 10px 10px rgba(32,178,170,0), PaleVioletRed -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0), PaleVioletRed -10px 0px ">&lt;span&gt;0 10px 10px rgba(32,178,170,0), PaleVioletRed -10px 0px </span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 10px, 0 10px  PaleVioletRed">&lt;div&gt;rgba(32,178,170,0) -10px 0px 10px, 0 10px  PaleVioletRed</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0) -10px 0px 10px, 0 10px  PaleVioletRed">&lt;span&gt;rgba(32,178,170,0) -10px 0px 10px, 0 10px  PaleVioletRed</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0), PaleVioletRed 0 10px ">&lt;div&gt;-10px 0px 10px rgba(32,178,170,0), PaleVioletRed 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0), PaleVioletRed 0 10px ">&lt;span&gt;-10px 0px 10px rgba(32,178,170,0), PaleVioletRed 0 10px </span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px , -10px 0px 10px #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) 0 10px , -10px 0px 10px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px , -10px 0px 10px #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) 0 10px , -10px 0px 10px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0.5), #20b2aa -10px 0px 10px">&lt;div&gt;0 10px  rgba(32,178,170,0.5), #20b2aa -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32,178,170,0.5), #20b2aa -10px 0px 10px">&lt;span&gt;0 10px  rgba(32,178,170,0.5), #20b2aa -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px , 0 10px 10px #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px , 0 10px 10px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px , 0 10px 10px #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px , 0 10px 10px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0.5), #20b2aa 0 10px 10px">&lt;div&gt;-10px 0px  rgba(32,178,170,0.5), #20b2aa 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32,178,170,0.5), #20b2aa 0 10px 10px">&lt;span&gt;-10px 0px  rgba(32,178,170,0.5), #20b2aa 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0, -10px 0px 0px #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 0, -10px 0px 0px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0, -10px 0px 0px #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 0, -10px 0px 0px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0.5), #20b2aa -10px 0px 0px">&lt;div&gt;0 10px 0 rgba(32,178,170,0.5), #20b2aa -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32,178,170,0.5), #20b2aa -10px 0px 0px">&lt;span&gt;0 10px 0 rgba(32,178,170,0.5), #20b2aa -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0, 0 10px 0px #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 0, 0 10px 0px #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0, 0 10px 0px #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 0, 0 10px 0px #20b2aa</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0.5), #20b2aa 0 10px 0px">&lt;div&gt;-10px 0px 0 rgba(32,178,170,0.5), #20b2aa 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32,178,170,0.5), #20b2aa 0 10px 0px">&lt;span&gt;-10px 0px 0 rgba(32,178,170,0.5), #20b2aa 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0px, -10px 0px 0 #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 0px, -10px 0px 0 #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 0px, -10px 0px 0 #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 0px, -10px 0px 0 #20b2aa</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0.5), #20b2aa -10px 0px 0">&lt;div&gt;0 10px 0px rgba(32,178,170,0.5), #20b2aa -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32,178,170,0.5), #20b2aa -10px 0px 0">&lt;span&gt;0 10px 0px rgba(32,178,170,0.5), #20b2aa -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0px, 0 10px 0 #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 0px, 0 10px 0 #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 0px, 0 10px 0 #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 0px, 0 10px 0 #20b2aa</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0.5), #20b2aa 0 10px 0">&lt;div&gt;-10px 0px 0px rgba(32,178,170,0.5), #20b2aa 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32,178,170,0.5), #20b2aa 0 10px 0">&lt;span&gt;-10px 0px 0px rgba(32,178,170,0.5), #20b2aa 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 10px, -10px 0px  #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) 0 10px 10px, -10px 0px  #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) 0 10px 10px, -10px 0px  #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) 0 10px 10px, -10px 0px  #20b2aa</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0.5), #20b2aa -10px 0px ">&lt;div&gt;0 10px 10px rgba(32,178,170,0.5), #20b2aa -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32,178,170,0.5), #20b2aa -10px 0px ">&lt;span&gt;0 10px 10px rgba(32,178,170,0.5), #20b2aa -10px 0px </span>
+<div class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 10px, 0 10px  #20b2aa">&lt;div&gt;rgba(32,178,170,0.5) -10px 0px 10px, 0 10px  #20b2aa</div>
+<span class="text-shadow" style="text-shadow: rgba(32,178,170,0.5) -10px 0px 10px, 0 10px  #20b2aa">&lt;span&gt;rgba(32,178,170,0.5) -10px 0px 10px, 0 10px  #20b2aa</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0.5), #20b2aa 0 10px ">&lt;div&gt;-10px 0px 10px rgba(32,178,170,0.5), #20b2aa 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32,178,170,0.5), #20b2aa 0 10px ">&lt;span&gt;-10px 0px 10px rgba(32,178,170,0.5), #20b2aa 0 10px </span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px , -10px 0px 10px #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px , -10px 0px 10px #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px , -10px 0px 10px #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px , -10px 0px 10px #DB7093</span>
+<div class="text-shadow" style="text-shadow: 0 10px  rgba(32, 178, 170, 1), #DB7093 -10px 0px 10px">&lt;div&gt;0 10px  rgba(32, 178, 170, 1), #DB7093 -10px 0px 10px</div>
+<span class="text-shadow" style="text-shadow: 0 10px  rgba(32, 178, 170, 1), #DB7093 -10px 0px 10px">&lt;span&gt;0 10px  rgba(32, 178, 170, 1), #DB7093 -10px 0px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px , 0 10px 10px #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px , 0 10px 10px #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px , 0 10px 10px #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px , 0 10px 10px #DB7093</span>
+<div class="text-shadow" style="text-shadow: -10px 0px  rgba(32, 178, 170, 1), #DB7093 0 10px 10px">&lt;div&gt;-10px 0px  rgba(32, 178, 170, 1), #DB7093 0 10px 10px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px  rgba(32, 178, 170, 1), #DB7093 0 10px 10px">&lt;span&gt;-10px 0px  rgba(32, 178, 170, 1), #DB7093 0 10px 10px</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0, -10px 0px 0px #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 0, -10px 0px 0px #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0, -10px 0px 0px #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 0, -10px 0px 0px #DB7093</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0 rgba(32, 178, 170, 1), #DB7093 -10px 0px 0px">&lt;div&gt;0 10px 0 rgba(32, 178, 170, 1), #DB7093 -10px 0px 0px</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0 rgba(32, 178, 170, 1), #DB7093 -10px 0px 0px">&lt;span&gt;0 10px 0 rgba(32, 178, 170, 1), #DB7093 -10px 0px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0, 0 10px 0px #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 0, 0 10px 0px #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0, 0 10px 0px #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 0, 0 10px 0px #DB7093</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32, 178, 170, 1), #DB7093 0 10px 0px">&lt;div&gt;-10px 0px 0 rgba(32, 178, 170, 1), #DB7093 0 10px 0px</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0 rgba(32, 178, 170, 1), #DB7093 0 10px 0px">&lt;span&gt;-10px 0px 0 rgba(32, 178, 170, 1), #DB7093 0 10px 0px</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0px, -10px 0px 0 #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 0px, -10px 0px 0 #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 0px, -10px 0px 0 #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 0px, -10px 0px 0 #DB7093</span>
+<div class="text-shadow" style="text-shadow: 0 10px 0px rgba(32, 178, 170, 1), #DB7093 -10px 0px 0">&lt;div&gt;0 10px 0px rgba(32, 178, 170, 1), #DB7093 -10px 0px 0</div>
+<span class="text-shadow" style="text-shadow: 0 10px 0px rgba(32, 178, 170, 1), #DB7093 -10px 0px 0">&lt;span&gt;0 10px 0px rgba(32, 178, 170, 1), #DB7093 -10px 0px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0px, 0 10px 0 #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 0px, 0 10px 0 #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 0px, 0 10px 0 #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 0px, 0 10px 0 #DB7093</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32, 178, 170, 1), #DB7093 0 10px 0">&lt;div&gt;-10px 0px 0px rgba(32, 178, 170, 1), #DB7093 0 10px 0</div>
+<span class="text-shadow" style="text-shadow: -10px 0px 0px rgba(32, 178, 170, 1), #DB7093 0 10px 0">&lt;span&gt;-10px 0px 0px rgba(32, 178, 170, 1), #DB7093 0 10px 0</span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 10px, -10px 0px  #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) 0 10px 10px, -10px 0px  #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) 0 10px 10px, -10px 0px  #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) 0 10px 10px, -10px 0px  #DB7093</span>
+<div class="text-shadow" style="text-shadow: 0 10px 10px rgba(32, 178, 170, 1), #DB7093 -10px 0px ">&lt;div&gt;0 10px 10px rgba(32, 178, 170, 1), #DB7093 -10px 0px </div>
+<span class="text-shadow" style="text-shadow: 0 10px 10px rgba(32, 178, 170, 1), #DB7093 -10px 0px ">&lt;span&gt;0 10px 10px rgba(32, 178, 170, 1), #DB7093 -10px 0px </span>
+<div class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 10px, 0 10px  #DB7093">&lt;div&gt;rgba(32, 178, 170, 1) -10px 0px 10px, 0 10px  #DB7093</div>
+<span class="text-shadow" style="text-shadow: rgba(32, 178, 170, 1) -10px 0px 10px, 0 10px  #DB7093">&lt;span&gt;rgba(32, 178, 170, 1) -10px 0px 10px, 0 10px  #DB7093</span>
+<div class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32, 178, 170, 1), #DB7093 0 10px ">&lt;div&gt;-10px 0px 10px rgba(32, 178, 170, 1), #DB7093 0 10px </div>
+<span class="text-shadow" style="text-shadow: -10px 0px 10px rgba(32, 178, 170, 1), #DB7093 0 10px ">&lt;span&gt;-10px 0px 10px rgba(32, 178, 170, 1), #DB7093 0 10px </span>
+<script type="text/javascript">
+$(document).ready(function() {
+$('.text-shadow').ieTextShadow();
+});
+</script>
+</body>
+</html>
