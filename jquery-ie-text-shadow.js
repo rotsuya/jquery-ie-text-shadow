@@ -5,6 +5,25 @@
  * @author Ryosuke Otsuya
  */
 (function($) {
+    // if jQuery.browser is not there(>= 1.9), create a compatible object instead.
+    var browser = $.browser;
+    if(!browser){
+        (function(){
+            var br = {
+                msie: false,
+                version: 0
+            };
+
+            var result = /(msie) ([\w.]+)/.exec(navigator.userAgent.toLowerCase());
+            if(result){
+                br.msie = true;
+                br.version = result[ 2 ];
+            }
+
+            browser = br;
+        })();
+    }
+
     /**
      * Apply text shadow.
      * @param {Object=} option
@@ -16,9 +35,9 @@
          * If IE6 or not.
          * @type {Boolean}
          */
-        var isIE6 = $.browser.version < 7;
+        var isIE6 = browser.version < 7;
         return this.each(function() {
-            if ($.browser.msie) {
+            if (browser.msie) {
                 var _$element = $(this);
                 _$element.ieTextShadowRemove();
                 var _style = this.currentStyle || document.defaultView.getComputedStyle(this, '');
@@ -179,7 +198,7 @@
 
     $.fn.ieTextShadowRemove = function() {
         return this.each(function() {
-            if ($.browser.msie) {
+            if (browser.msie) {
                 $(this).children(".jQueryTextShadow").remove();
             }
         });
